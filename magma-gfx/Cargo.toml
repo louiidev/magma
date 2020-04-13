@@ -1,5 +1,5 @@
 [package]
-name = "magma"
+name = "magma-gfx"
 version = "0.1.0"
 authors = ["louisgjohnson <louisgjohnson@gmail.com>"]
 edition = "2018"
@@ -7,13 +7,9 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+winit = "0.22.0"
 vulkano = "0.18.0"
 vulkano-win = "0.18.0"
-vulkano-shaders = "0.18.0"
-winit = "0.22.0"
 cgmath = "0.17.0"
-magma-gfx = { path = "./magma-gfx" }
-rand = "0.7.3"
-
-[workspace]
-members = ["magma-gfx"]
+vulkano-shaders = "0.18.0"
+spin_sleep = "0.3.7"
